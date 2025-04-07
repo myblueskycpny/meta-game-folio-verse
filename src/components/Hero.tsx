@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Gamepad2, Laptop, VrHeadset } from 'lucide-react';
+import { ArrowDown, Gamepad2, Laptop, Headphones } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -40,7 +40,7 @@ const Hero = () => {
               </div>
               <div className="flex flex-col items-center text-center p-3">
                 <div className="w-12 h-12 rounded-full bg-purple/10 flex items-center justify-center mb-2">
-                  <VrHeadset className="text-purple" />
+                  <Headphones className="text-purple" />
                 </div>
                 <h3 className="font-medium">XR Design</h3>
               </div>
