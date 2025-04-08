@@ -41,9 +41,9 @@ const projects = [
     id: 4,
     title: "Pyramid Legacy Virtual Tour",
     description: "An interactive virtual tour of the Pyramid Legacy, allowing users to explore ancient structures and artifacts in a 3D environment.",
-    image: "https://mybluesky-gamedev-portfolio.vercel.app/assets/Pyramid.png",
+    image: "https://mybluesky-gamedev-portfolio.vercel.app/assets/Pyramid.jpg",
     tags: ["Game", "VR", "Unity"],
-    videoId: "dQw4w9WgXcQ", // Example YouTube ID
+    videoId: "Lex5kFnJN14", // Example YouTube ID
     categories: ["game", "vr"],
     collaboration: "Jatim Park Group",
     year: "2025",
