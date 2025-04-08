@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="glass-card p-4 sm:p-6 relative animate-fade-in">
               <div className="aspect-square w-full max-w-[400px] rounded-xl bg-gradient-to-tr from-purple/20 via-transparent to-teal/20 overflow-hidden flex items-center justify-center">
-                <img src="https://meta-game-folio-verse.vercel.app/assets/FOTO%20YUDISIUM.jpg" alt="Game Developer Portrait" className="w-full h-full object-cover object-[center_15%]" />
+                <img src="https://mybluesky-gamedev-portfolio.vercel.app/assets/FOTO%20YUDISIUM.jpg" alt="Game Developer Portrait" className="w-full h-full object-cover object-[center_15%]" />
               </div>
             </div>
           </div>
