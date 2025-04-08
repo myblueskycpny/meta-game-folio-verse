@@ -1,4 +1,5 @@
 
+
 # GameFolio Portfolio Documentation
 
 This document provides guidance on how to modify and update the content of your portfolio website.
@@ -13,6 +14,7 @@ This document provides guidance on how to modify and update the content of your 
 7. [Collaborations Section](#collaborations-section)
 8. [Contact Section](#contact-section)
 9. [Images and Media](#images-and-media)
+10. [Setting Up Email Functionality](#setting-up-email-functionality)
 
 ## General Information
 
@@ -175,7 +177,34 @@ For best results when updating images:
 4. Optimize images for web before uploading (compress to reduce file size)
 5. Host images on a reliable service (e.g., your own server, AWS S3, Cloudinary, etc.)
 
+## Setting Up Email Functionality
+
+The contact form uses EmailJS to send emails directly from the client side. To set up EmailJS:
+
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service (e.g., Gmail, Outlook, etc.)
+3. Create an email template with variables matching the form fields:
+   - `from_name`: Sender's name
+   - `from_email`: Sender's email address
+   - `subject`: Email subject
+   - `message`: Message content
+
+4. Get your Service ID, Template ID, and User ID from EmailJS
+5. Update the Contact component with your IDs:
+
+```jsx
+await emailjs.send(
+  "YOUR_SERVICE_ID", // Replace with your Service ID
+  "YOUR_TEMPLATE_ID", // Replace with your Template ID
+  templateParams,
+  "YOUR_USER_ID" // Replace with your User ID
+);
+```
+
+6. Test the form to ensure emails are being received properly
+
 ## Additional Notes
 
 - If you need to change links or routes, make sure to update them in all relevant files
 - When updating icons from Lucide React, ensure the icon exists in the current package version
+
