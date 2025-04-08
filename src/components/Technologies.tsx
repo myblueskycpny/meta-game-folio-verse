@@ -110,10 +110,10 @@ const Technologies = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="aspect-video bg-gradient-to-br from-purple/20 to-teal/20 rounded-lg flex items-center justify-center">
-              <img src="../../public/assets/RMK.png" alt="Legal Metaverse" className="w-full h-full object-cover " />
+              <img src="https://meta-game-folio-verse.vercel.app/assets/RMK.png" alt="Legal Metaverse" className="w-full h-full object-cover " />
             </div>
             <div className="aspect-video bg-gradient-to-br from-purple/20 to-teal/20 rounded-lg flex items-center justify-center">
-              <img src="../../public/assets/Rbatik.png" alt="Batik Museum" className="w-full h-full object-cover " />
+              <img src="https://meta-game-folio-verse.vercel.app/assets/Rbatik.png" alt="Batik Museum" className="w-full h-full object-cover " />
             </div>
           </div>
         </div>

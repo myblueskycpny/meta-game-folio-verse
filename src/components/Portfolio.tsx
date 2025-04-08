@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "VR Classroom Experience",
     description: "An immersive virtual reality simulation for learning with interactive 3D models and collaborative features.",
-    image: "../../public/assets/Simulation.png",
+    image: "https://meta-game-folio-verse.vercel.app/assets/Simulation.png",
     tags: ["VR", "Education", "Unity"],
     videoId: "c0wTpPyKMXw", // Example YouTube ID
     categories: ["vr", "education"],
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Virtual Batik Museum",
     description: "A virtual museum showcasing Indonesian batik culture, especially Nitik from Yogyakarta, allowing users to explore and learn about various of Nitik batik styles.",
-    image: "../../public/assets/RBatik.png",
+    image: "https://meta-game-folio-verse.vercel.app/assets/RBatik.png",
     tags: ["Metaverse", "Spatial.io", "Academic"],
     videoId: "3IPLcmZI2oY", // Example YouTube ID
     categories: ["metaverse", "culture"],
@@ -30,7 +30,7 @@ const projects = [
     id: 3,
     title: "Virtual Courtroom",
     description: "A virtual courtroom environment built with Unity & Spatial.io framework for practical work and legal simulations.",
-    image: "../../public/assets/RMK.png",
+    image: "https://meta-game-folio-verse.vercel.app/assets/RMK.png",
     tags: ["Metaverse", "Spatial.io", "Academic"],
     videoId: "3oPB3ZIr28s", // Example YouTube ID
     categories: ["metaverse", "education"],
@@ -41,7 +41,7 @@ const projects = [
     id: 4,
     title: "Pyramid Legacy Virtual Tour",
     description: "An interactive virtual tour of the Pyramid Legacy, allowing users to explore ancient structures and artifacts in a 3D environment.",
-    image: "../../public/assets/Pyramid.png",
+    image: "https://meta-game-folio-verse.vercel.app/assets/Pyramid.png",
     tags: ["Game", "VR", "Unity"],
     videoId: "dQw4w9WgXcQ", // Example YouTube ID
     categories: ["game", "vr"],
@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: "ARBMKG : Sekolah Lapang Iklim",
     description: "An Augmented Reality application for the Meteorology, Climatology, and Geophysics Agency (BMKG) to educate the public about climate and weather.",
-    image: "../../public/assets/BMKGLogo.png",
+    image: "https://meta-game-folio-verse.vercel.app/assets/BMKGLogo.png",
     tags: ["AR", "Education", "Unity"],
     videoId: "yto-MJZJn9E", // Example YouTube ID
     categories: ["ar"],
@@ -63,7 +63,7 @@ const projects = [
     id: 6,
     title: "Block Runner : Hand Tracking Control (Prototype)",
     description: "A prototype game using hand tracking technology for a unique gaming experience.",
-    image: "../../public/assets/Block Runner.jpg",
+    image: "https://meta-game-folio-verse.vercel.app/assets/Block%20Runner.jpg",
     tags: ["AR", "Education", "Unity"],
     videoId: "zbOBnRrNUnE", // Example YouTube ID
     categories: ["ar", "game"],
@@ -74,7 +74,7 @@ const projects = [
     id: 7,
     title: "Hijaiyah AR",
     description: "An Augmented Reality application for learning Hijaiyah letters, designed for children to enhance their learning experience.",
-    image: "../../public/assets/HijaiyAR.jpg",
+    image: "https://meta-game-folio-verse.vercel.app/assets/HijaiyAR.jpg",
     tags: ["AR", "Education", "Unity"],
     videoId: "a6966XTTGHM", // Example YouTube ID
     categories: ["ar"],
@@ -85,7 +85,7 @@ const projects = [
     id: 8,
     title: "Photobooth AR",
     description: "An Augmented Reality photobooth application that allows users to take fun and interactive photos with virtual Characters.",
-    image: "../../public/assets/PhotoboothAR.jpg",
+    image: "https://meta-game-folio-verse.vercel.app/assets/PhotoboothAR.jpg",
     tags: ["AR", "Unity"],
     videoId: "ttopK-UZ5ag", // Example YouTube ID
     categories: ["ar"],
@@ -97,7 +97,7 @@ const projects = [
     title: "Interactive Selfie Booth",
     description:
       "An interactive selfie booth application that uses AR technology to enhance user experience with fun filters and effects. They can also take selfies visually with President, Vice President, local freedom fighter heroes and other public figures.",
-    image: "../../public/assets/InteractiveSelfie.jpg",
+    image: "https://meta-game-folio-verse.vercel.app/assets/InteractiveSelfie.jpg",
     tags: ["AR", "Unity"],
     videoId: "ttopK-UZ5ag", // Example YouTube ID
     categories: ["ar"],

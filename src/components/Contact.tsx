@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,23 +13,23 @@ const Contact = () => {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
-    setFormData(prev => ({ ...prev, [id]: value }));
+    setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     // Check if all fields are filled
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast({
         title: "Missing information",
         description: "Please fill in all fields",
-        variant: "destructive"
+        variant: "destructive",
       });
       return;
     }
@@ -43,36 +42,36 @@ const Contact = () => {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
-        message: formData.message
+        message: formData.message,
       };
-      
+
       // Send email using EmailJS
       // Replace these with your EmailJS Service ID, Template ID, and User ID
       await emailjs.send(
-        "service_default", // Service ID
-        "template_default", // Template ID
+        "service_u9nup79", // Service ID
+        "template_e5yozaf", // Template ID
         templateParams,
-        "your_user_id" // User ID
+        "TOT56il9argFWbV0n" // User ID
       );
-      
+
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
-      
+
       // Reset the form
       setFormData({
         name: "",
         email: "",
         subject: "",
-        message: ""
+        message: "",
       });
     } catch (error) {
       console.error("Error sending message:", error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again later.",
-        variant: "destructive"
+        variant: "destructive",
       });
     } finally {
       setIsLoading(false);
@@ -112,7 +111,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/70">Phone</p>
-                    <a href="" className="hover:text-purple transition-colors">
+                    <a href="tel:+6282248280770" className="hover:text-purple transition-colors">
                       (+62) 822-4828-0770
                     </a>
                   </div>
@@ -173,26 +172,13 @@ const Contact = () => {
                     <label htmlFor="name" className="text-sm font-medium">
                       Name
                     </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
-                      value={formData.name}
-                      onChange={handleChange}
-                      required 
-                    />
+                    <Input id="name" placeholder="Your name" value={formData.name} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="Your email" 
-                      value={formData.email}
-                      onChange={handleChange}
-                      required 
-                    />
+                    <Input id="email" type="email" placeholder="Your email" value={formData.email} onChange={handleChange} required />
                   </div>
                 </div>
 
@@ -200,34 +186,17 @@ const Contact = () => {
                   <label htmlFor="subject" className="text-sm font-medium">
                     Subject
                   </label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Message subject" 
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required 
-                  />
+                  <Input id="subject" placeholder="Message subject" value={formData.subject} onChange={handleChange} required />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
                     Message
                   </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Your message" 
-                    className="min-h-[150px]" 
-                    value={formData.message}
-                    onChange={handleChange}
-                    required 
-                  />
+                  <Textarea id="message" placeholder="Your message" className="min-h-[150px]" value={formData.message} onChange={handleChange} required />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  className="w-full bg-purple hover:bg-purple-dark"
-                  disabled={isLoading}
-                >
+                <Button type="submit" className="w-full bg-purple hover:bg-purple-dark" disabled={isLoading}>
                   {isLoading ? (
                     <>Sending...</>
                   ) : (
