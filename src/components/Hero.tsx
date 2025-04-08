@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { ArrowDown, Gamepad2, Laptop, Headphones } from 'lucide-react';
+import React from "react";
+import { ArrowDown, Gamepad2, Laptop, Headphones } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -14,13 +13,9 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-br from-purple to-purple-dark bg-clip-text text-transparent">
-              Game Developer & XR Specialist
-            </h1>
-            <p className="text-lg md:text-xl mb-6 text-foreground/80">
-              Creating immersive experiences with Unity, AR/VR technologies, and intelligent game design
-            </p>
-            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-br from-purple to-purple-dark bg-clip-text text-transparent">Game Developer & XR Specialist</h1>
+            <p className="text-lg md:text-xl mb-6 text-foreground/80">Creating immersive experiences with Unity, AR/VR technologies, and intelligent game design</p>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#portfolio" className="btn-primary flex items-center justify-center gap-2">
                 <Gamepad2 size={18} />
@@ -52,26 +47,18 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="glass-card p-4 sm:p-6 relative animate-fade-in">
               <div className="aspect-square w-full max-w-[400px] rounded-xl bg-gradient-to-tr from-purple/20 via-transparent to-teal/20 overflow-hidden flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Game Developer Portrait"
-                  className="w-full h-full object-cover"
-                />
+                <img src="../../public/assets/Foto Yudisium.jpg" alt="Game Developer Portrait" className="w-full h-full object-cover object-[center_15%]" />
               </div>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a 
-            href="#about" 
-            className="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
-            aria-label="Scroll down"
-          >
+          <a href="#about" className="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow" aria-label="Scroll down">
             <ArrowDown size={20} className="text-purple" />
           </a>
         </div>
